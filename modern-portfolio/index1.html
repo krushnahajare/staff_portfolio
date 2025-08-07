@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radhika Shinde - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <!--<li><a href="#bio">Bio</a></li>-->
+      <li><a href="#papers">Papers</a></li>
+      <li><a href="#taught">Taught</a></li>
+      <!--<li><a href="#news">News</a></li>-->
+      <li><a href="#experience">Experience</a></li>
+      <!--<li><a href="#projects">Projects</a></li>-->
+      <!--<li><a href="#teaching">Teaching</a></li>-->
+      <!--<li><i class="fas fa-search"></i></li>-->
+      <li><i class="fas fa-moon"></i></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="container">
+    <!-- Profile Section -->
+    <section class="profile" id="bio">
+      <img src="profile_photo.jpg" alt="profile-pic" class="profile-pic">
+      <h2>prof.Radhika Shinde</h2>
+      
+      <p>
+         <i class="fab fa-linkedin"></i>
+           <strong>LinkedIn:</strong>
+
+      <a href="http://LinkedIn.com/in/radhika-shinde-3072bb315/" target="_blank">
+      https://www.linkedin.com/in/radhikashinde
+      </a>
+      </p>
+      <p>
+        <i class="fas fa-envelope"></i>
+       
+           <strong>Email:</strong>
+      <a href="mailto:radhikashinde@jspmjscoe.edu.in">radhikashinde@jspmjscoe.edu.in</a>
+      <!-- <a href="radhikashinde@jspmjscoe.edu.in">radhikashinde@jspmjscoe.edu.in</a> -->
+      </p>
+
+
+
+      <div class="social-icons">
+        
+      </div>
+    </section>
+
+    <!-- About + Details Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+       I am Prof. Radhika Shinde, currently teaching Database Management Systems (DBMS) at JSPM’s Jayawantrao Sawant College of Engineering (JSCOE), Pune. With a deep passion for data and system design, I aim to make database concepts both accessible and engaging for students.
+
+      My teaching approach blends theory with hands-on practice, covering key topics like relational models, SQL, normalization, ER modeling, and transaction management. I strongly believe in fostering an interactive classroom environment where students feel encouraged to ask questions, explore real-world applications, and develop a problem-solving mindset.
+
+      My goal is not just to teach the syllabus, but to spark curiosity and prepare students for real challenges in the world of data and technology.
+      </p>
+      <button class="download-btn">⬇ Download CV</button>
+
+      <div class="info-grid">
+        <div>
+          <h2>Interests</h2>
+          <ul>
+            <li>database management systems </li>
+            <li>Data science</li>
+            <li>Cyber security </li>
+            <li>Artificial intelligence </li>
+            <li>Machine learning</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul>
+            <li>🎓 Master of Engineering (ME) in Information Technology
+                Savitribai Phule Pune University
+            </li>
+            <li>🎓 Bachelor of Engineering (BE) in Computer Engineering
+                  Savitribai Phule Pune University — Graduated with Distinction</li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      
+    </section>
+  </main>
+
+  <div class="cartoon-intro">
+    <img src="cartoon.png" alt="Cartoon" class="cartoon-img" onclick="playIntro()" />
+    <div class="speech-bubble" id="speechText">Hi! Welcome to Professor Radhika Shinde's portfolio!</div>
+    <audio id="introAudio" src="radhika_intro.mp3"></audio>
+  </div>
+
+  <script>
+  const message = "Hi! Welcome to Professor Radhika Shinde's portfolio. She teaches DBMS, Software Testing, Machine Learning, Microprocessors, and more at JSCOE, Pune. Let’s explore!";
+  let i = 0;
+
+  function typeText() {
+    const speechBox = document.getElementById("speechText");
+    if (i < message.length) {
+      speechBox.innerHTML += message.charAt(i);
+      i++;
+      setTimeout(typeText, 35);
+    } else {
+      // Hide the speech bubble 2 seconds after typing finishes
+      setTimeout(() => {
+        speechBox.style.display = "none";
+      }, 2000);
+    }
+  }
+
+  function playIntro() {
+    const audio = document.getElementById("introAudio");
+    audio.play().catch(e => {
+      console.warn("Audio could not autoplay:", e);
+    });
+    typeText();
+  }
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      playIntro();
+    }, 1000);
+  });
+</script>
+
+
+  <!-- Taught Subjects Section -->
+  <section class="taught" id="taught">
+    <h2>Taught Subjects</h2>
+    <ul>
+      <li>Software Testing and Quality Assurance</li>
+      <li>Fundamentals of Data Structures</li>
+      <li>Machine Learning</li>
+      <li>Database Management Systems</li>
+      <li>Processor Architecture and Interfacing</li>
+      <li>Microprocessor</li>
+    </ul>
+  </section>
+  <section class="experience" id="experience">
+    <h3>Teaching Experience</h3>
+  <ul>
+    <li>9+ years of teaching experience in Computer Science & Engineering.</li>
+    <li>Specialized in DBMS, Software Testing, Machine Learning, Data Structures, Microprocessors, and Processor Architecture.</li>
+    <li>Skilled in curriculum design, academic mentoring</li>
+  </ul>
+  </section>
+  <section class="papers" id="papers">
+    <h3>papers</h3>
+    <ul>
+      <li>2 international journal papers</li>
+      <li>1 conference papers</li>
+
+    </ul>
+  </section>
+
+ 
+
+</body>
+</html>

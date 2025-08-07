@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("https://i.pinimg.com/736x/53/90/4f/53904f1fa1f6dda33c0c9877d4dea11d.jpg");
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  color: black;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar a, .navbar i {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+/* Profile Section */
+.profile {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+}
+
+.profile h3 {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  flex: 2;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  background: #223;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.info-grid div {
+  width: 45%;
+}
+
+.info-grid ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+.cartoon-intro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.cartoon-img {
+  width: 90px;
+  cursor: pointer;
+}
+
+.speech-bubble {
+  background-color: white;
+  color: black;
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  max-width: 200px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.taught {
+  margin-top: 30px;
+  padding: 20px;
+  color:white;
+  
+  border-radius: 10px;
+}
+
+.taught h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.taught ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.taught ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.speech-bubble {
+  transition: opacity 1s ease;
+}
+
+.speech-bubble[style*="display: none"] {
+  opacity: 0;
+}
+.experience { 
+  margin-top: 30px;
+  padding: 20px;
+  color:white; 
+}
+.experience h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.experience ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.papers { 
+  margin-top: 30px;
+  padding: 20px;
+  color:white; 
+}
+.papers h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.papers ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.papers ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+
